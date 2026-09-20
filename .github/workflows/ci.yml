@@ -38,6 +38,9 @@ jobs:
       - name: Start PostgreSQL databases
         run: docker compose up -d customer-db policy-db claims-db payment-db notification-db
 
+      - name: Wait for databases to start
+        run: sleep 10
+
       - name: Build all services (compile)
         run: ./gradlew build -x test
 
