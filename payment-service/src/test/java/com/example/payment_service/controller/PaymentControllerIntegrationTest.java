@@ -20,7 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.example.payment_service.model.Payment;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@SpringBootTest
+@SpringBootTest(properties = "eureka.client.enabled=false")
 @AutoConfigureMockMvc
 class PaymentControllerIntegrationTest {
 

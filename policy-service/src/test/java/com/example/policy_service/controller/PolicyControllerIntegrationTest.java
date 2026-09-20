@@ -20,7 +20,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.example.policy_service.model.Policy;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@SpringBootTest
+@SpringBootTest(properties = "eureka.client.enabled=false")
 @AutoConfigureMockMvc
 class PolicyControllerIntegrationTest {
 

@@ -21,7 +21,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.example.claims_service.model.Claim;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@SpringBootTest
+@SpringBootTest(properties = "eureka.client.enabled=false")
 @AutoConfigureMockMvc
 class ClaimControllerIntegrationTest {
 

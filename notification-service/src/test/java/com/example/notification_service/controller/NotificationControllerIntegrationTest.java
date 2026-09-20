@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.example.notification_service.model.Notification;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@SpringBootTest
+@SpringBootTest(properties = "eureka.client.enabled=false")
 @AutoConfigureMockMvc
 class NotificationControllerIntegrationTest {
 
