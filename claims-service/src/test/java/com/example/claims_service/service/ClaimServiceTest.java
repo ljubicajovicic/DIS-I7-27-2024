@@ -21,7 +21,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.example.claims_service.model.Claim;
 import com.example.claims_service.repository.ClaimRepository;
-import com.example.claims_service.service.ClaimService;
 
 @ExtendWith(MockitoExtension.class)
 class ClaimServiceTest {
