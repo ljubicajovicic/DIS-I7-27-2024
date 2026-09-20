@@ -1,0 +1,10 @@
+rootProject.name = 'DIS-Projekat-I7-27-2024'
+
+include 'eureka-server'
+include 'config-server'
+include 'gateway'
+include 'policy-service'
+include 'customer-service'
+include 'claims-service'
+include 'payment-service'
+include 'notification-service'
