@@ -35,6 +35,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Start PostgreSQL databases
+        run: docker compose up -d customer-db policy-db claims-db payment-db notification-db
+
       - name: Build all services (compile)
         run: ./gradlew build -x test
 
